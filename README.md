@@ -1,2 +1,2 @@
-Mr.-Auto-Trim
+Mr. Auto Trim
 =============
