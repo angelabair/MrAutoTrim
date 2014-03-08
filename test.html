@@ -9,8 +9,8 @@
 		background-size: cover;
 		background-color: white;
 		margin: auto;
-		width: 800px;
-		padding: 30px 0px 0px 0px;
+		width: 850px;
+		padding: 30px 0px 30px 0px;
 	}
 	body {
 		background-color: #cc9966;
@@ -19,32 +19,84 @@
 		margin: 0 auto;
 		padding: 0;
 	}
-	a { 
-		color: white;
-		font-size: 12px;
+	a, ul, li {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		color: black;
+		background: transparent;
+		text-decoration: none;
 	}
-	ul {
-		padding: 10px;
-		background: black;
+	nav {
+		width: 100%;
+		margin: 20px 0;
 	}
-	li {
-		display: inline;
-		padding: 0px 10px 0px 10px;
+	nav ul {
+		width: 100%;
+		list-style: none;
+		margin: 0;
+		padding: 0; 
 	}
+	nav ul li {
+		width: 25%;
+		float: left;
+		border: 2px;
+		border-color: black;
+	}
+	nav ul li a {
+		text-align: center;
+		padding: 8px 0;
+		display: block;
+		width: 100%;
+		background: #41737e;
+		background: -moz-linear-gradient(top,
+			#41737e 0%, #8cb5bf 100%);
+		background: -webkit-gradient(linear, 
+			left top, left bottom, color-stop(0%,#41737e),
+			color-stop(100%,#8cb5bf));
+	}
+	nav ul li a:hover {
+		background: #41737e; 
+		background: -moz-linear-gradient(top,  
+			#41737e 0%, #41737e 100%);
+		background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%,#41737e), 
+			color-stop(100%,#41737e)); 
+	} 
 	</style>
 </head>
 <body>
 	<header>
 		<img src="images/logo9.gif">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Our Services</a></li>
-			<li><a href="#">Our Guarantee</a></li>
-			<li><a href="#">FAQs</a></li>
-			<li><a href="#">Testimonials</a></li>
-			<li><a href="#">Our Products</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/print">About Us</a>
+				</li>
+				<li>
+					<a href="/web">Our Services</a>
+				</li>
+				<li>
+					<a href="/bio">Our Guarantee</a>
+				</li>
+				<li>
+					<a href="/contact">FAQs</a>
+				</li>
+				<li>
+					<a href="/web">Testimonials</a>
+				</li>
+				<li>
+					<a href="/bio">Our Products</a>
+				</li>
+				<li>
+					<a href="/contact">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 </body>
