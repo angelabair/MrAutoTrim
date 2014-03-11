@@ -17,9 +17,9 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		outline: 0;
+		/*outline: 0;*/
 		font-size: 100%;
-		color: black;
+		color: white;
 		background: transparent;
 		text-decoration: none;
 	}
@@ -36,10 +36,8 @@
 	nav ul li {
 		width: 25%;
 		float: left;
-		border: 2px;
-		border-color: black;
 	}
-	nav ul li:nth-child(n+1):not(:nth-last-child(-n+4)) a {
+/*	nav ul li:nth-child(n+1):not(:nth-last-child(-n+4)) a {
 		text-align: center;
 		padding: 8px 0;
 		display: block;
@@ -57,17 +55,49 @@
 		display: block;
 		width: 100%;
 		background: #41737e;
-		background: -moz-linear-gradient(top,
-			#67949F 0%, #8cb5bf 100%);
-		background: -webkit-gradient(linear, 
-			left top, left bottom, color-stop(0%,#67949F),
-			color-stop(100%,#8cb5bf));
-	}
-	nav ul li:nth-child(n+1) a:hover {
+		background: -moz-linear-gradient(top, #67949F 0%, #8cb5bf 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#67949F),color-stop(100%,#8cb5bf));
+	}*/
+	/*nav ul li:nth-child(n+1) a:hover {
 		background: #41737e; 
 		background: -moz-linear-gradient(top,  
 			#41737e 0%, #41737e 100%);
 		background: -webkit-gradient(linear, left top, left bottom, 
 			color-stop(0%,#41737e), 
 			color-stop(100%,#41737e)); 
+	} */
+		nav ul li:nth-child(n+1):not(:nth-last-child(-n+4)) a {
+		text-align: center;
+		padding: 8px 0;
+		display: block;
+		width: 100%;
+		background: #41737e;
+		background: -moz-linear-gradient(top,
+			black 0%, #1D1D1D 100%);
+		background: -webkit-gradient(linear, 
+			left top, left bottom, color-stop(0%,black),
+			color-stop(100%,#1D1D1D));
+	}
+	nav ul li:nth-child(n+5):not(:nth-last-child(-n)) a {
+		text-align: center;
+		padding: 10px 0;
+		display: block;
+		width: 100%;
+		background: #41737e;
+		background: -moz-linear-gradient(top, #1D1D1D 0%, #393939 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1D1D1D),color-stop(100%,#393939));
+	}
+	nav ul li:nth-child(n+1) a:hover {
+		background: #41737e;
+		background: -moz-linear-gradient(top,
+			#41737e 0%, #67949F 100%);
+		background: -webkit-gradient(linear, 
+			left top, left bottom, color-stop(0%,#41737e),
+			color-stop(100%,#67949F));
 	} 
+/*	#contact {
+		height: 300px;
+		width: 250px;
+		background-color: white;
+		margin: auto;
+	}*/
