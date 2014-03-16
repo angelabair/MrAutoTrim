@@ -5,12 +5,28 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<title>Contact us!</title>
 	<meta name="description" content="Please contact us with any questions, comments, or suggestions related to auto upholstery, auto glass, auto electrical systems, car sunroofs, or convertible tops." />
-	<link rel="stylesheet" type="text/css" href="header.css" media="screen" />
+	<link rel='stylesheet' type='text/css' href='styles.css' media="screen"/>
+	<link rel='stylesheet' type='text/css' href='navbar.css' media="screen"/>
 	<link href="/normalize.css" rel="stylesheet">
 	<style>
 
 	body {
 		overflow-y: scroll;
+		font: 100% arial, helvetica, sans-serif;		
+	}
+	
+	fieldset {
+		padding: 0 1em 1em 1em;
+	}
+	
+	legend {
+		padding: 1em;
+	}
+	
+	label {
+		float: left;
+		clear: left;
+		width: 7em;
 	}
 	#contactintro {
 		font-family: sans-serif;
@@ -29,7 +45,7 @@
 		line-height: 2.2em;
 		width: 600px;
 	}
-	#contents {
+	/*#contents {
 		font-family: sans-serif; 
 		font-size: 13px;
 		color: navy;
@@ -39,42 +55,44 @@
 
 	#contents a:link {color: navy;}
 	#contents a:visited {color: navy;}
-	/*#contents a:hover, a:active {color: white;}*/
+	/*#contents a:hover, a:active {color: white;}
 
-	a:focus {-moz-outline-style: none}			
+	a:focus {-moz-outline-style: none}		*/	*/
 	</style>
 </head>
 <body>
 	<header>
-		<a href="home.html"><img src="images/logo9.gif"></a>
-		<nav>
-			<ul>
-				<li>
-					<a href="home.html">Home</a>
-				</li>
-				<li>
-					<a href="aboutus.html">About Us</a>
-				</li>
-				<li>
-					<a href="services.html">Our Services</a>
-				</li>
-				<li>
-					<a href="guarantee.html">Our Guarantee</a>
-				</li>
-				<li>
-					<a href="faqs.html">FAQs</a>
-				</li>
-				<li>
-					<a href="testimonials.html">Testimonials</a>
-				</li>
-				<li>
-					<a href="products.html">Our Products</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-			</ul>
-		</nav>
+		<div id="nav_bar">
+			<li class="center"><a href="home.html"><img src="images/logo9.png"></a></li>
+			<nav>
+				<ul>
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="aboutus.html">About Us</a>
+					</li>
+					<li>
+						<a href="services.html">Our Services</a>
+					</li>
+					<li>
+						<a href="guarantee.html">Our Guarantee</a>
+					</li>
+					<li>
+						<a href="faqs.html">FAQs</a>
+					</li>
+					<li>
+						<a href="testimonials.html">Testimonials</a>
+					</li>
+					<li>
+						<a href="products.html">Our Products</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<div id="contactintro">
 		<p>Please email us with any Questions, Comments, Suggestions, or Requests for Estimates. Please keep in mind that we will eventually have to see your vehicle to give you an accurate estimate. Only estimates written at our office on our letterhead will be considered binding. In order to reply, we need your email address. We would also appreciate your other contact information since we periodically mail coupons and promotions. We will not sell or give out your information to anyone. We respect your privacy. If you only want to give us your email address, simply type "NA" in the other fields.</p>
@@ -82,24 +100,52 @@
 			<strong>Mr. Auto Trim</strong>
 		</p>
 	</div>
-	<div id="contactform">
-		<form action="http://www.hostmonster.com/monstermail" enctype="multipart/form-data" method="post">  
-			Name: <input type="text" name="Name" /> <br />
-			Email: <input type="text" name="mailfrom" /> <br />
-			Street Address: <input type="text" name="StreetAddress" /> <br />
-			City: <input type="text" name="City" /> <br />
-			Zip: <input type="text" name="Zip" /> <br />
-			Phone: <input type="text" name="Phone" /> <br />
-			Customer Comments: <br />
-			<textarea name="comments" rows="10" cols="48"></textarea> <br />
+	<form action="http://www.hostmonster.com/monstermail" enctype="multipart/form-data" method="post">
+		<fieldset>
+<!-- 	<div id="contactform">
+-->
+<div>
+	<label for="name">Name: </label>
+	<input name="name" id="name">
+</div>
+<div>
+	<label for="email">Email: </label>
+	<input name="email" id="email">
+</div>
+<div>
+	<label for="addres">Street Address: </label>
+	<input name="address" id="address">
+</div>
+<div>
+	<label for="city">City: </label>
+	<input name="city" id="city">
+</div>
+<div>
+	<label for="zip">Zipcode: </label>
+	<input name="zip" id="zip">
+</div>
+<div>
+	<label for="phone">Phone: </label>
+	<input name="phone" id="phone">
+</div>
+<div>
+	<label for="message">Message: </label>
+	<textarea rows="10" cols="40" name="message" id="message"></textarea>
+	<input type="hidden" name="sendtoemail" value="henry@mrautotrim.com" /> <br />
+	<input type="submit" value="Send Email" /> </form>
+	<input type="hidden" name="redirect" value="http://mrautotrim.com/" />
+</div>
+			<!-- <textarea name="comments" rows="10" cols="48"></textarea> <br />
 			<input type="hidden" name="sendtoemail" value="henry@mrautotrim.com" /> <br />
 			<input type="submit" value="Send Email" /> </form>
-			<input type="hidden" name="redirect" value="http://mrautotrim.com/" />
-		</div>
-		<div id="contents">
-			<p> <a href="home.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="services.html">Services</a> | <a href="guarantee.html">Guarantee</a> | <a href="faqs.html">FAQ's</a> | <a href="testimonials.html">Testimonials</a> | <a href="products.html">Products</a> | <a href="contact.html">Contact Us</a> | <a href="https://www.google.com/maps/place/1316+Utica+Ave/@40.640457,-73.929548,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25ca5daf819e7:0xf679d92e3ec69512" target="blank">Directions</a> 
-			</p>
-		</div>
-	</body>
-	</html>
+			<input type="hidden" name="redirect" value="http://mrautotrim.com/" /> -->
+		</fieldset>
+	</form>
+</div>
+<footer>
+	<p> <a> Copyright &copy; 2014 </a> | <a> 1316 Utica Avenue, Brooklyn, NY </a> | <a> 718-451-1963 </a> | <a> Site designed by Angela Bair and Dan Harel </a> | <a href="https://www.google.com/maps/place/1316+Utica+Ave/@40.640457,-73.929548,17z/data=!3m1!4b1!4m2!3m1!1s0x89c25ca5daf819e7:0xf679d92e3ec69512" target="blank"> Directions </a> 
+	</p>
+</footer>
+</body>
+</html>
 

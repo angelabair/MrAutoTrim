@@ -3,7 +3,7 @@
     background-color: white;
     margin: auto;
     width: 1075px;
-    padding: 30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   .center {
     text-align: center;
@@ -15,105 +15,30 @@
     margin: 0 auto;
     padding: 0;
   }
-  #cssmenu,
-  #cssmenu ul,
-  #cssmenu ul li,
-  #cssmenu ul li a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  footer {
+    font-family: sans-serif; 
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    margin: 1050px 0px 0px 0px;
   }
-  #cssmenu {
-    width: auto;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #ffffff;
-  }
-  #cssmenu.align-right ul li {
-    float: right;
-    border-right: 0;
-    border-left: 1px solid rgba(0, 0, 0, 0.22);
-  }
-  #cssmenu.align-right ul li a {
-    border-right: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.15);
-  }
-  #cssmenu ul {
-    background: #222222;
-    /* Old browsers */
-
-    background: -moz-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
-    background: -webkit-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
-    background: -o-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
-    background: -ms-linear-gradient(bottom, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
-    background: linear-gradient(to top, #000000 0%, #222222 50%, #3c3c3c 51%, #393939 78%, #888888 100%);
-  }
-  #cssmenu:after,
-  #cssmenu ul:after {
-    content: '.';
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-  }
-  #cssmenu ul li {
-    float: left;
-    display: block;
-    border-right: 1px solid rgba(0, 0, 0, 0.22);
-    z-index: 1;
-  }
-  #cssmenu ul li::after {
-    content: '';
-    width: 100%;
-    height: 8px;
+/*  .grid {
+    background-color: white;
+    display:inline;
+    /*float: both;*/
+    width: 1075px;
     position: absolute;
-    border-top-left-radius: 50% 4px;
-    border-top-right-radius: 50% 4px;
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
-    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
-    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #222222 61%, #222222 100%);
-    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-    z-index: 2;
-    bottom: 10px;
+    margin-left: 415px;
   }
-  #cssmenu ul li a {
-    display: block;
-    padding: 10px 30px;
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 3;
+  .box-2 {
+    width: 100%;
+    overflow: hidden;
   }
-  #cssmenu ul li a:hover,
-  #cssmenu ul li.active a {
-    color: #ffffff;
+  .box-2 h2 {
+    padding: 0;
   }
-  #cssmenu ul li:hover,
-  #cssmenu ul li.active {
-    background: #4985a6;
-    /* Old browsers */
-
-    background: -moz-linear-gradient(bottom, #325a71 0%, #4985a6 50%, #669dbc 51%, #639bba 78%, #d0e1eb 100%);
-    background: -webkit-linear-gradient(bottom, #325a71 0%, #4985a6 50%, #669dbc 51%, #639bba 78%, #d0e1eb 100%);
-    background: -o-linear-gradient(bottom, #325a71 0%, #4985a6 50%, #669dbc 51%, #639bba 78%, #d0e1eb 100%);
-    background: -ms-linear-gradient(bottom, #325a71 0%, #4985a6 50%, #669dbc 51%, #639bba 78%, #d0e1eb 100%);
-    background: linear-gradient(to top, #325a71 0%, #4985a6 50%, #669dbc 51%, #639bba 78%, #d0e1eb 100%);
+  .box-2 p {
+    padding: 0 0 6px 0;
   }
-  #cssmenu ul li:hover::after,
-  #cssmenu ul li.active::after {
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #4985a6 61%, #4985a6 100%);
-    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #4985a6 61%, #4985a6 100%);
-    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #4985a6 61%, #4985a6 100%);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #4985a6 61%, #4985a6 100%);
-    background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
-  }
+  .box-2 ul {
+    padding: 0 0 16px 0;*/
