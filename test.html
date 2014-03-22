@@ -69,7 +69,7 @@
 			left top, left bottom, color-stop(0%,#67949F),
 			color-stop(100%,#8cb5bf));
 	}
-	nav ul li a:hover {
+	nav ul li:nth-child(n+1) a:hover {
 		background: #41737e; 
 		background: -moz-linear-gradient(top,  
 			#41737e 0%, #41737e 100%);
@@ -80,6 +80,7 @@
 	</style>
 </head>
 <body>
+>	<div id="cssmenu">
 	<header>
 		<img src="images/logo9.gif">
 		<nav>
@@ -110,5 +111,6 @@
 				</li>
 			</ul>
 		</nav>
-	</header>
+	</div>
+		</header>
 </body>

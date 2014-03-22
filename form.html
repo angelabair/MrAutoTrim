@@ -15,15 +15,15 @@
 		overflow-y: scroll;
 		font: 100% arial, helvetica, sans-serif;		
 	}
-
+	
 	fieldset {
 		padding: 0 1em 1em 1em;
 	}
-
+	
 	legend {
 		padding: 1em;
 	}
-
+	
 	label {
 		float: left;
 		clear: left;
@@ -44,7 +44,7 @@
 		font-size: 15px;
 		margin: 20px 0px 0px 45px;
 		line-height: 2.2em;
-		width: 600px;
+		width: 600px; 
 	}
 	/*#contents {
 		font-family: sans-serif; 
@@ -58,7 +58,7 @@
 	#contents a:visited {color: navy;}
 	/*#contents a:hover, a:active {color: white;}
 
-	a:focus {-moz-outline-style: none}		*/	*/
+	a:focus {-moz-outline-style: none}		*/	
 	</style>
 </head>
 <body>
@@ -101,7 +101,8 @@
 			<strong>Mr. Auto Trim</strong>
 		</p>
 	</div>
-	<form action="http://www.hostmonster.com/monstermail" enctype="multipart/form-data" method="post">
+	<!-- <form action="http://www.hostmonster.com/monstermail" enctype="multipart/form-data" method="post"> -->
+	<form method="post" name="myemailform" action="form-to-email.php">
 		<fieldset>
 			<legend>Contact us</legend>
 			<div>
@@ -113,7 +114,7 @@
 				<input name="email" id="email">
 			</div>
 			<div>
-				<label for="addres">Street Address: </label>
+				<label for="address">Street Address: </label>
 				<input name="address" id="address">
 			</div>
 			<div>
@@ -131,9 +132,9 @@
 			<div>
 				<label for="message">Message: </label>
 				<textarea rows="10" cols="40" name="message" id="message"></textarea>
-				<input type="hidden" name="sendtoemail" value="HMRAUTOTRIM@aol.com" /> <br />
-				<input type="submit" value="Send Email" /> </form>
-				<input type="hidden" name="redirect" value="http://mrautotrim.com/" />
+				<!-- <input type="hidden" name="sendtoemail" value="HMRAUTOTRIM@aol.com" /> --> <br />
+				<input type="submit" value="Send Email" /> <!-- </form> --> 
+				<!-- <input type="hidden" name="redirect" value="http://mrautotrim.com/" /> -->
 			</div>
 		</fieldset>
 	</form>
@@ -144,3 +145,4 @@
 </footer>
 </body>
 </html>
+
