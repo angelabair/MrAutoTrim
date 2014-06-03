@@ -1,0 +1,44 @@
+  header {
+    background-size: cover;
+    background-color: white;
+    margin: auto;
+    width: 1075px;
+    padding: 0px 0px 0px 0px;
+  }
+  .center {
+    text-align: center;
+  }
+  body {
+    background-color: #cc9966;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+  }
+  footer {
+    font-family: sans-serif; 
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    margin: auto 0px 0px 0px;
+  }
+/*  .grid {
+    background-color: white;
+    display:inline;
+    /*float: both;*/
+    /*width: 1075px;
+    position: absolute;
+    margin-left: 415px;
+  }*/
+  .box-2 {
+    width: 100%;
+    overflow: hidden;
+  }
+  .box-2 h2 {
+    padding: 0;
+  }
+  .box-2 p {
+    padding: 0 0 6px 0;
+  }
+  .box-2 ul {
+    padding: 0 0 16px 0;*/

@@ -89,10 +89,11 @@ ul {
 }
 #footer {
 	clear: both; 
-	height: 100px;
+	height: 150px;
 }
 #sub-footer {
 	width: 960px; 
+	background-color: #CC9966;
 	margin: 0 auto 0 auto;
 	color: black;
 	text-align:center;
