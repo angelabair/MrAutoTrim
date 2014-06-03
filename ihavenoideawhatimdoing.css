@@ -5,7 +5,7 @@ body {
 	font-size: 80%;
 }
 h1 {
-	color: #FFF;
+	color: #000;
 	font-size: 20px;
 	margin: 0;
 }
@@ -65,7 +65,7 @@ ul {
 	padding: 8px 0 0 10px;
 	margin-top: 4px;
 	text-shadow: 1px 1px #33337d ;
-	border: black 1px;
+	border: 1px black;
 
 }
 #navbar li a:hover, #navbar li #current, #navbar li a:active {
@@ -73,6 +73,7 @@ ul {
 	background: #ce9566;
 	padding: 8px 0 0 10px;
 	margin-top: 4px;
+	border: 1px black;
 }
 #content-holder {
 }
@@ -113,3 +114,6 @@ ul {
 	font-size: 15px;
 	font-weight:bold;
 }
+.style8 {
+      font-size: small
+    }
