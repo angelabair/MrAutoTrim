@@ -1,3 +1,6 @@
+html {
+	overflow-y: scroll;
+}
 body {
 	background-color:#CC9966;
 	margin: 15px 0 0 0;
@@ -19,9 +22,9 @@ h1 {
 
 }
 #header-L {
-	width: 380px; 
+	width: 360px; 
 	float:left;
-	padding: 3px 0 0 25px;
+	padding: 5px 0 0 25px;
 }
 #header-R {
 	width: 380px; 
@@ -116,4 +119,4 @@ ul {
 }
 .style8 {
       font-size: small
-    }
+}
